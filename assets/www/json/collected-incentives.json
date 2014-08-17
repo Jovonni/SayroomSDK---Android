@@ -1,0 +1,43 @@
+{
+    "incentives_by_uid": {
+        "code": "1",
+        "message": "successful",
+        "results": {
+		"unredeemed_incentives":"7",	
+		"incentives": [
+            {
+                "brand_name": "wish",
+                "incentive": "Dominos 2 medium pizzas 5 dollars",
+				"incentive_id": "164",
+                "brand_image": "https://m1.behance.net/rendition/modules/46640679/disp/c5dabde104b9b7aa88d4f3c4c77560ad.jpg"
+            },{
+                "brand_name": "wish",
+                "incentive": "Dominos 2 medium pizzas 5 dollars",
+				"incentive_id": "164",
+                "brand_image": "https://m1.behance.net/rendition/modules/46640679/disp/c5dabde104b9b7aa88d4f3c4c77560ad.jpg"
+            },{
+                "brand_name": "wish",
+                "incentive": "Dominos 2 medium pizzas 5 dollars",
+				"incentive_id": "164",
+                "brand_image": "https://m1.behance.net/rendition/modules/46640679/disp/c5dabde104b9b7aa88d4f3c4c77560ad.jpg"
+            },{
+                "brand_name": "wish",
+                "incentive": "Dominos 2 medium pizzas 5 dollars",
+				"incentive_id": "164",
+                "brand_image": "https://m1.behance.net/rendition/modules/46640679/disp/c5dabde104b9b7aa88d4f3c4c77560ad.jpg"
+            },{
+                "brand_name": "wish",
+                "incentive": "Dominos 2 medium pizzas 5 dollars",
+				"incentive_id": "164",
+                "brand_image": "https://m1.behance.net/rendition/modules/46640679/disp/c5dabde104b9b7aa88d4f3c4c77560ad.jpg"
+            },{
+                "brand_name": "wish",
+                "incentive": "Dominos 2 medium pizzas 5 dollars",
+				"incentive_id": "164",
+                "brand_image": "https://m1.behance.net/rendition/modules/46640679/disp/c5dabde104b9b7aa88d4f3c4c77560ad.jpg"
+            }
+        ],
+        "status": "okay"
+      }
+	}
+}

@@ -1,0 +1,12 @@
+{
+    "user_by_uid": {
+        "code": "1",
+        "message": "successful",
+        "results": [
+                "user_name": "Gregory moe",
+                "user_image": "http://albumartcollection.com/wp-content/uploads/2011/03/designersmx-cover-brianbrooks2.jpeg",
+                "is_runner": false
+        ],
+        "status": "okay"
+    }
+}

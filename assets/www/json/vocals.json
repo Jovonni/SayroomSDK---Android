@@ -1,0 +1,53 @@
+{
+    "vocalizations": {
+        "code": "1",
+        "message": "successful",
+        
+        "results": {
+		"tracks": [
+            {
+                "user_name": "Noel",
+                "user_image": "https://s3.amazonaws.com/sayroom_avatars/MhKNGNjUsrceeedcJBZcFt9klogXwYYWCYX4w9SdqcQUxseUFO.jpg",
+                "user_voice": "https://s3.amazonaws.com/sayroom_audio/314iTpqgbLuJYQ8FEi2iNl9zA9xfHTl0olO8eebtDn0IWNQgURx1w.mp3"
+            },{
+                "user_name": "leo",
+                "user_image": "https://s3.amazonaws.com/sayroom_avatars/E4ble8JjJgcg24ZNtr6Gs9QuRMhZgQxvL67FtVJluEG6bipqfx.jpg",
+                "user_voice": "https://s3.amazonaws.com/sayroom_audio/22uPkKkux9xTmVPVEZTgBNGZcwsDWKGbYBQgLEKpYC2Uc3SrIjeL.mp3"
+            },{
+                "user_name": "lacoste",
+                "user_image": "https://s3.amazonaws.com/sayroom_avatars/JkWVSx6nS9C7Dl6PvOD9qhMGT0ixl6LPcrmzNzJ3cyanJSTHqx.jpg",
+                "user_voice": "https://s3.amazonaws.com/sayroom_audio/319egNmp98UV6hl7k9KbMewyfyYG5tTBQXQP8a1xvuk56sNP6nvMQ.mp3"
+            },{
+                "user_name": "fuct",
+                "user_image": "https://s3.amazonaws.com/sayroom_avatars/FGAH8Y9ChvEsRXXK7jdeaXaH2qOJkp7QAmn2dlX1DswziOOscM.jpg",
+                "user_voice": "https://s3.amazonaws.com/sayroom_audio/88qHkHZbJfE4BN6vtM6nDBnIYDBXWTCyMTzZexkHZhsdaQDI78Wj.mp3"
+            },{
+                "user_name": "nike",
+                "user_image": "https://s3.amazonaws.com/sayroom_avatars/FGAH8Y9ChvEsRXXK7jdeaXaH2qOJkp7QAmn2dlX1DswziOOscM.jpg",
+                "user_voice": "https://s3.amazonaws.com/sayroom_audio/88m6lvFmxtVoCWeRdNJtk366cXvuvfmqTJccF8RzPx3TFsi5Fek8.mp3"
+            },{
+                "user_name": "polo",
+                "user_image": "https://s3.amazonaws.com/sayroom_avatars/FGAH8Y9ChvEsRXXK7jdeaXaH2qOJkp7QAmn2dlX1DswziOOscM.jpg",
+                "user_voice": "https://s3.amazonaws.com/sayroom_audio/88kT5KkK93zHF0pfinCNDWdWYTphY8eFlhBGTulxWI0Gkll7hayi.mp3"
+            },{
+                "user_name": "puma",
+                "user_image": "https://s3.amazonaws.com/sayroom_avatars/ASoJpWKztFym2C6Ix1AT1KbP5Eh0W2u1ZkUnI7ulmr703dw0PV.jpg",
+                "user_voice": "https://s3.amazonaws.com/sayroom_audio/383oAVI1ClrH2y7gSzOD3OgcnM3OgNJX6EZjBj0iaiTANQ95yhf6I.mp3"
+            },{
+                "user_name": "gucci",
+                "user_image": "https://s3.amazonaws.com/sayroom_avatars/FGAH8Y9ChvEsRXXK7jdeaXaH2qOJkp7QAmn2dlX1DswziOOscM.jpg",
+                "user_voice": "https://s3.amazonaws.com/sayroom_audio/88WQQUj9cB5HIuxI40aR6otahKThQY1XvcdYbbM6L7oHtBQEBSFd.mp3"
+            },{
+                "user_name": "zarra",
+                "user_image": "https://s3.amazonaws.com/sayroom_avatars/FGAH8Y9ChvEsRXXK7jdeaXaH2qOJkp7QAmn2dlX1DswziOOscM.jpg",
+                "user_voice": "https://s3.amazonaws.com/sayroom_audio/88qV3DQLL0poD1SX4EqSi5EISIzJHrov9PwVhUMOdGrA7XEtPzaI.mp3"
+            },{
+                "user_name": "california rebublic",
+                "user_image": "https://s3.amazonaws.com/sayroom_avatars/FGAH8Y9ChvEsRXXK7jdeaXaH2qOJkp7QAmn2dlX1DswziOOscM.jpg",
+                "user_voice": "https://s3.amazonaws.com/sayroom_audio/88daCWrKdDyf7lqwRpWvwmJbYC1l91VZR9hWXdi5DwVaP6veYTcw.mp3"
+            }
+        ],
+        "status": "okay"
+      }
+	}
+}

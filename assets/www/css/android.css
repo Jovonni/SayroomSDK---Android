@@ -1,0 +1,11 @@
+.menu-overlay{
+	-webkit-transition: all 0s ease !important;
+   transition: all 0s ease !important;
+}
+
+.splitlayout.open-menu .page-left {
+	-webkit-transition: all 0s ease !important;
+   transition: all 0s ease !important;
+	-webkit-filter:blur(0) !important;
+	filter:blur(0) !important;
+}

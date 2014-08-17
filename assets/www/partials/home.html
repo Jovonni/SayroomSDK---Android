@@ -1,0 +1,142 @@
+<div id="doc" >
+          
+            <!-- container -->
+            <div class="container" scrolled="loadMore('images')">
+              <ul class="images-ul">
+                <li ng-repeat = "image in list_of_images.brandImages" class="brand-image">
+                 <div class="image-box" hm-tap="setRecordPane(image, image.id, $event);">
+                   <img class="img-overlay" src="img/gradient.png"/>
+                   <img class="image" ng-src="{{image.image}}"/>
+                   <img class="spoken" ng-show="isSpokenOn(image.vocalized);" src="img/bubble.png"/>
+                   <h3 class="brand-name">{{image.name}}</h3>
+                   <div class="emblem"></div>
+                   <span class="count">{{image.vocalizations}}</span>
+                 </div>
+                </li>
+              </ul>
+            </div><!-- /container -->
+            
+            
+            
+            <!-- /overlay -->
+            <div class="overlay" hm-touch ="hideSidePane();"></div>
+            
+            
+            
+            <!-- /side pane -->
+            <div class="side-pane" hm-swipeLeft ="hideSidePane();">
+    
+              <!-- record pane -->
+               <div class="record-pane" ng-show="revealPane(recordPane)">
+                 <div class="pane-header">
+                  <h4 class="speak">Recording</h4>
+                 </div>
+                 <span class="prompt">You have {{count}}:00 seconds</span>
+                 <div class="inner-pane record">
+                  <div class="image-container">
+                   <img class="speakable" ng-src="{{selectedImage}}"/>
+                 
+                   <p class="rec-name">{{selectedtext}}</p>
+                   
+                   <!-- progress-button -->
+                   <div class="progress-button">
+                            <button class="image"><span></span></button>    
+                            <svg class="progress-circle" width="70" height="70">
+							<path d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"/></svg>
+                            <svg class="checkmark" width="70" height="70"><path d="m31.5,46.5l15.3,-23.2"/><path d="m31.5,46.5l-8.5,-7.1"/></svg>
+                            <svg class="cross" width="70" height="70"><path d="m35,35l-9.3,-9.3"/><path d="m35,35l9.3,9.3"/><path d="m35,35l-9.3,9.3"/><path d="m35,35l9.3,-9.3"/></svg>
+                  </div><!-- /progress-button -->
+                   
+                   <span class="indicator"></span>
+                 </div><!-- /image container -->
+                 <div class="stop-button" hm-tap="abruptRecordingStop();"><span>Stop</span></div>
+                </div><!--inner-pane-->
+              </div><!-- /record pane -->
+              
+              <!-- vocalizations pane -->
+              <div class="vocalizations-pane" ng-show="revealPane(vocalizationsPane)">
+                <div class="pane-header">
+                  <h4>What Others Say</h4>
+                </div>
+                <span class="prompt">tap to listen</span>
+                
+                <div class="inner-pane vocalizations" ng-repeat="mixtape in player.playlist" >
+                  <ul>
+                    <li ng-repeat="track in mixtape.tracks" class="track">
+                    <div ng-click="player.play($index, $parent.$index)" class="image-container" ng-class="{current: player.current.track == $index}">
+                      <img class="speakable" ng-src="{{track.user_image}}"/>
+                        
+                        <div class="sub">
+                          <span class="indicator sub-indicator"></span>
+                        </div>
+                        <img class="sub" ng-src="{{selectedImage}}"/>
+                     
+                      <p class="user-name" >{{track.user_name}}</p>
+                     </div>
+                     
+                     </li>
+                  </ul>
+                </div> 
+              </div>  <!-- /vocalizations pane -->
+              
+              
+              
+              <!-- runner brands pane -->
+              <div class="brands-pane" ng-show="revealPane(brandListPane)">
+                <div class="pane-header">
+                  <form>
+                   <div class="searchBar">
+                    <input disabled id="search" ng-model="value" ng-keyup="getInput()" placeholder="search brands..." />
+                  </div>
+                 </form>
+                </div>
+                <span class="prompt">Select a task</span>
+                
+                <div class="inner-pane brandlist" >
+                  <ul>
+                    <li ng-repeat="brand in list_of_brands.runnerBrands" class="track">
+                    <div class="image-container" hm-tap="setTaskPane(brand)">
+                      <img class="speakable" ng-src="{{brand.image}}"/>
+                  
+                     </div>
+                     <p class="user-name" >{{brand.name}}</p>
+                     </li>
+                  </ul>
+                </div> 
+              </div>  <!-- /runner brands pane -->
+              
+              
+              
+              <!-- runner brands pane -->
+              <div class="task-pane" ng-show="revealPane(taskPane)">
+                <div class="pane-header">
+                  <!-- progress-button -->
+                   <div class="progress-button task" hm-tap="beginTaskRecording(task.id)">
+                            <button><span>Record</span></button>    
+                            <svg class="progress-circle" width="70" height="70">
+							<path d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"/></svg>
+                            <svg class="checkmark" width="70" height="70"><path d="m31.5,46.5l15.3,-23.2"/><path d="m31.5,46.5l-8.5,-7.1"/></svg>
+                            <svg class="cross" width="70" height="70"><path d="m35,35l-9.3,-9.3"/><path d="m35,35l9.3,9.3"/><path d="m35,35l-9.3,9.3"/><path d="m35,35l9.3,-9.3"/></svg>
+                  </div><!-- /progress-button -->
+                </div>
+                <span class="prompt" hm-tap="BrandButtonClicked()">< Back <span class="timer"> {{count}}:00</span></span>
+                
+                <div class="inner-pane task-panel" >
+                 <div class="image-container">
+                 <img class="img-overlay" src="img/gradient.png"/>
+                  <img class="speakable" ng-src="{{task.image}}"/>
+                  <h3 class="brand-name">{{task.name}}</h3>
+                   <div class="emblem"></div>
+                   <span class="count">{{task.vocalizations}}</span>
+                  <span class="task-head">Collected reactions: {{task.captured}}/{{task.requirement}}</span>
+                  <p class="description"><b>Task:</b> {{task.task}}</p>
+                  <p class="description"><b>Reward:</b> {{task.reward}}</p>
+                  </div>
+                  
+                </div> 
+              </div>  <!-- /runner brands pane -->
+              
+            </div><!-- /side pane -->
+        
+    
+	  </div><!--/doc-->
