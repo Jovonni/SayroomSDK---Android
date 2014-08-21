@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.vardhaman.barebones"
+    package="com.nuracode.sayroom"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -26,26 +26,42 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         
+         
         <activity
-            android:name="com.vardhaman.barebones.MainActivity"
+            android:name="com.nuracode.sayroomsdk.MainActivity"
             android:label="@string/app_name" >
-            
+        </activity>-->
+        
+        
+        <activity 
+            android:name="com.nuracode.sayroomsdk.SayroomSDK">= 
         </activity>
         
+        
+        
+        
+         
         <activity
-            android:name="com.vardhaman.barebones.SplashActivity"
+            android:name="com.nuracode.sayroomsdk.SplashActivity"
             android:label="@string/title_activity_splash" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        -->
+        
+        <!-- 
         <activity
-            android:name="com.vardhaman.barebones.RegisterActivity"
-            android:label="@string/title_activity_register" >
-            
-            
+            android:name="com.nuracode.sayroomsdk.RegisterActivity"
+            android:label="@string/title_activity_register" >            
         </activity>
+        -->
+        
+        <fragment></fragment>
+        
+        <!-- <activity android:name="com.example.android.tictactoe.library.GameActivity" /> -->
+        
     </application>
 
 </manifest>
